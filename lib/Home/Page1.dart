@@ -4,6 +4,7 @@ import 'package:flutter_application_3/Class/Early_N_Def.dart';
 import 'package:flutter_application_3/Class/Healthyt_N.dart';
 import 'package:flutter_application_3/Class/Late_N_Def.dart';
 import 'package:flutter_application_3/Class/Prog_N_Def.dart';
+import 'package:flutter_application_3/Home/profile.dart';
 import 'package:flutter_application_3/Improve/Improve1.dart';
 import 'package:flutter_application_3/Thenme.dart';
 import 'package:image_picker/image_picker.dart';
@@ -113,7 +114,7 @@ class _HomePage1State extends State<HomePage1> {
   Widget build(BuildContext context) {
     var h = MediaQuery.of(context).size.height;
     var w = MediaQuery.of(context).size.width;
-    return Scaffold(
+    return Scaffold( 
       resizeToAvoidBottomInset: false,
       backgroundColor: backgroundColor,
       body: Container(
@@ -292,7 +293,7 @@ class _HomePage1State extends State<HomePage1> {
 
               Expanded(
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Padding(
                       padding: const EdgeInsets.all(8.0),
@@ -301,22 +302,20 @@ class _HomePage1State extends State<HomePage1> {
                           child: Image.asset("assets/logo1.png"),
                           actions: <Widget>[
                             CupertinoContextMenuAction(
-                              child: const Text('เอาในเครื่อง'),
+                              child: const Text('เปิดแกลลอรี่'),
                               onPressed: getImageFromGallery,
                             ),
                             CupertinoContextMenuAction(
-                              child: const Text('กล้องถ่ายรูป'),
+                              child: const Text('เปิดกล้องถ่ายรูป'),
                               onPressed: getImageFromCamera,
                             ),
                             CupertinoContextMenuAction(
                               child: const Text('Healthyt_N'),
                               onPressed: () {
-                                Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) {
-                                          return Healthyt_N(_file!);
-                                        }));
+                                Navigator.push(context,
+                                    MaterialPageRoute(builder: (context) {
+                                  return Healthyt_N(_file!);
+                                }));
                               },
                             ),
                             CupertinoContextMenuAction(
@@ -361,9 +360,6 @@ class _HomePage1State extends State<HomePage1> {
                   "กดรูปค้างไว้ จะมีเมนูขึ้นมา",
                   style: TextStyle(color: Colors.white),
                 ),
-              ),
-              SizedBox(
-                height: 10,
               ),
             ],
           ),
