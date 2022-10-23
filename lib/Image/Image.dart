@@ -27,9 +27,16 @@ class _Image_HomeState extends State<Image_Home> {
             height: 300,
           ),
           Center(
-            child: Container(child: Image.asset("assets/logo1.png",scale: 0.7)),
+            child:
+                Container(child: Image.asset("assets/logo1.png", scale: 0.7)),
           ),
-          Text("Canabis"),
+          Text("Nitrogen deficiency detection system in cannabis leaves.",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+                fontSize: 20,
+              ),
+              textAlign: TextAlign.center),
           SizedBox(
             height: 200,
           ),
