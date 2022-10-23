@@ -20,7 +20,7 @@ class _Image_HomeState extends State<Image_Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Color.fromARGB(255, 73, 211, 84),
       body: Column(
      
         children: [
@@ -36,7 +36,7 @@ class _Image_HomeState extends State<Image_Home> {
           ),
           Center(
             child: CircularProgressIndicator(
-              color: Colors.orange,
+              color: Color.fromARGB(255, 255, 255, 255),
             ),
           ),
         ],

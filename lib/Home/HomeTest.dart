@@ -12,9 +12,10 @@ class HomeTest extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
      
-      appBar: AppBar(
-         backgroundColor: otpColor,
-      ),
+      //appBar: AppBar(
+         //backgroundColor: Color.fromARGB(255, 73, 211, 84),
+         //elevation: 0,
+      //),
       // drawer: ProBar(user),
       body: HomePage1(),
     );
