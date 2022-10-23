@@ -114,9 +114,9 @@ class _HomePage1State extends State<HomePage1> {
   Widget build(BuildContext context) {
     var h = MediaQuery.of(context).size.height;
     var w = MediaQuery.of(context).size.width;
-    return Scaffold( 
+    return Scaffold(
       resizeToAvoidBottomInset: false,
-      backgroundColor: backgroundColor,
+      backgroundColor: Colors.green[600],
       body: Container(
         height: h,
         width: w,

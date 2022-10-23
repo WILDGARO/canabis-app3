@@ -6,14 +6,11 @@ import 'package:flutter_application_3/Home/ProBar.dart';
 import 'package:flutter_application_3/Thenme.dart';
 
 class HomeTest extends StatelessWidget {
-  
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-     
       appBar: AppBar(
-         backgroundColor: otpColor,
+        backgroundColor: backgroundColor,
       ),
       // drawer: ProBar(user),
       body: HomePage1(),

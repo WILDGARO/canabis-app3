@@ -11,9 +11,9 @@ class Sing_up extends StatefulWidget {
 }
 
 class _Sing_upState extends State<Sing_up> {
-  String Nmae ="";
-  String Email ="";
-  String Password="";
+  String Name = "";
+  String Email = "";
+  String Password = "";
 
   @override
   bool isPassword = true;
@@ -80,7 +80,6 @@ class _Sing_upState extends State<Sing_up> {
             Email = value;
           },
           cursorColor: yellowColor,
-         
           decoration: InputDecoration(
             hintText: 'EMAIL',
             hintStyle: interTextStyle.copyWith(
@@ -92,12 +91,12 @@ class _Sing_upState extends State<Sing_up> {
               Icons.email,
               color: Colors.white,
             ),
-            enabledBorder: const UnderlineInputBorder(
+            enabledBorder: UnderlineInputBorder(
               borderSide: BorderSide(
                 color: greyColor,
               ),
             ),
-            focusedBorder: const UnderlineInputBorder(
+            focusedBorder: UnderlineInputBorder(
               borderSide: BorderSide(color: yellowColor),
             ),
             focusColor: yellowColor,
@@ -116,10 +115,9 @@ class _Sing_upState extends State<Sing_up> {
             color: whiteColor,
           ),
           onChanged: (value) {
-            Nmae = value;
+            Name = value;
           },
           cursorColor: yellowColor,
-
           decoration: InputDecoration(
             hintText: 'USERNAME',
             hintStyle: interTextStyle.copyWith(
@@ -131,12 +129,12 @@ class _Sing_upState extends State<Sing_up> {
               Icons.person,
               color: Colors.white,
             ),
-            enabledBorder: const UnderlineInputBorder(
+            enabledBorder: UnderlineInputBorder(
               borderSide: BorderSide(
                 color: greyColor,
               ),
             ),
-            focusedBorder: const UnderlineInputBorder(
+            focusedBorder: UnderlineInputBorder(
               borderSide: BorderSide(color: yellowColor),
             ),
             focusColor: yellowColor,
@@ -179,12 +177,12 @@ class _Sing_upState extends State<Sing_up> {
                 color: greyColor,
               ),
             ),
-            enabledBorder: const UnderlineInputBorder(
+            enabledBorder: UnderlineInputBorder(
               borderSide: BorderSide(
                 color: greyColor,
               ),
             ),
-            focusedBorder: const UnderlineInputBorder(
+            focusedBorder: UnderlineInputBorder(
               borderSide: BorderSide(color: yellowColor),
             ),
             focusColor: yellowColor,
@@ -221,144 +219,141 @@ class _Sing_upState extends State<Sing_up> {
           child: Column(
             children: [
               ElevatedButton(
-                
-                style: ElevatedButton.styleFrom(
-                  primary: Colors.white
-                ),
-                  onPressed: () async{
-                  
-                      if (Email == "") {
-                            print("ว่าง");
-                            await showDialog(
-                                context: context,
-                                builder: (BuildContext context) => AlertDialog(
-                                      title: Text(''),
-                                      backgroundColor: Color.fromARGB(255, 0, 0, 0),
-                                      content: Text(
-                                        '  ใส่ Email ',
-                                        style: TextStyle(
-                                            color: Color.fromARGB(255, 255, 255, 255), fontSize: 20),
+                  style: ElevatedButton.styleFrom(primary: Colors.white),
+                  onPressed: () async {
+                    if (Email == "") {
+                      print("ว่าง");
+                      await showDialog(
+                          context: context,
+                          builder: (BuildContext context) => AlertDialog(
+                                title: Text(''),
+                                backgroundColor: Color.fromARGB(255, 0, 0, 0),
+                                content: Text(
+                                  '  ใส่ Email ',
+                                  style: TextStyle(
+                                      color: Color.fromARGB(255, 255, 255, 255),
+                                      fontSize: 20),
+                                ),
+                                actions: <Widget>[
+                                  TextButton(
+                                      child: Text('Close'),
+                                      style: TextButton.styleFrom(
+                                        primary: Colors.white,
+                                        backgroundColor: Colors.blue,
                                       ),
-                                      actions: <Widget>[
-                                        TextButton(
-                                            child: Text('Close'),
-                                            style: TextButton.styleFrom(
-                                              primary: Colors.white,
-                                              backgroundColor: Colors.blue,
-                                            ),
-                                            onPressed: () {
-                                              Navigator.pop(context);
-                                            }),
-                                      ],
-                                    ));
-                                
-                          } else if (Nmae == "") {
-                            print("ว่าง");
-                            await showDialog(
-                                context: context,
-                                builder: (BuildContext context) => AlertDialog(
-                                      title: Text(''),
-                                      backgroundColor: Color.fromARGB(255, 0, 0, 0),
-                                      content: Text(
-                                        '  ใส่ Nmae ',
-                                        style: TextStyle(
-                                            color: Color.fromARGB(255, 255, 255, 255), fontSize: 20),
+                                      onPressed: () {
+                                        Navigator.pop(context);
+                                      }),
+                                ],
+                              ));
+                    } else if (Name == "") {
+                      print("ว่าง");
+                      await showDialog(
+                          context: context,
+                          builder: (BuildContext context) => AlertDialog(
+                                title: Text(''),
+                                backgroundColor: Color.fromARGB(255, 0, 0, 0),
+                                content: Text(
+                                  '  ใส่ Nmae ',
+                                  style: TextStyle(
+                                      color: Color.fromARGB(255, 255, 255, 255),
+                                      fontSize: 20),
+                                ),
+                                actions: <Widget>[
+                                  TextButton(
+                                      child: Text('Close'),
+                                      style: TextButton.styleFrom(
+                                        primary: Colors.white,
+                                        backgroundColor: Colors.blue,
                                       ),
-                                      actions: <Widget>[
-                                        TextButton(
-                                            child: Text('Close'),
-                                            style: TextButton.styleFrom(
-                                              primary: Colors.white,
-                                              backgroundColor: Colors.blue,
-                                            ),
-                                            onPressed: () {
-                                              Navigator.pop(context);
-                                            }),
-                                      ],
-                                    ));
-                          } else if (Password == "") {
-                            print("ว่าง");
-                            await showDialog(
-                                context: context,
-                                builder: (BuildContext context) => AlertDialog(
-                                      title: Text(''),
-                                      backgroundColor: Color.fromARGB(255, 0, 0, 0),
-                                      content: Text(
-                                        '  Password ',
-                                        style: TextStyle(
-                                            color: Color.fromARGB(255, 253, 253, 253), fontSize: 20),
+                                      onPressed: () {
+                                        Navigator.pop(context);
+                                      }),
+                                ],
+                              ));
+                    } else if (Password == "") {
+                      print("ว่าง");
+                      await showDialog(
+                          context: context,
+                          builder: (BuildContext context) => AlertDialog(
+                                title: Text(''),
+                                backgroundColor: Color.fromARGB(255, 0, 0, 0),
+                                content: Text(
+                                  '  Password ',
+                                  style: TextStyle(
+                                      color: Color.fromARGB(255, 253, 253, 253),
+                                      fontSize: 20),
+                                ),
+                                actions: <Widget>[
+                                  TextButton(
+                                      child: Text('Close'),
+                                      style: TextButton.styleFrom(
+                                        primary: Colors.white,
+                                        backgroundColor: Colors.blue,
                                       ),
-                                      actions: <Widget>[
-                                        TextButton(
-                                            child: Text('Close'),
-                                            style: TextButton.styleFrom(
-                                              primary: Colors.white,
-                                              backgroundColor: Colors.blue,
-                                            ),
-                                            onPressed: () {
-                                              Navigator.pop(context);
-                                            }),
-                                      ],
-                                    ));
-                          }else if (Email != ""&&Nmae !=""&&Password !="") {
-                            User? u = await User.checkLogin(Nmae, Password, Email);
-                            print("GO");
-                            await showDialog(
-                                context: context,
-                                builder: (BuildContext context) => AlertDialog(
-                                      title: Text(''),
-                                      backgroundColor: Color.fromARGB(255, 0, 0, 0),
-                                      content: Text(
-                                        '  สมัครเเล้วเด้อ ',
-                                        style: TextStyle(
-                                            color: Color.fromARGB(255, 255, 255, 255), fontSize: 20),
+                                      onPressed: () {
+                                        Navigator.pop(context);
+                                      }),
+                                ],
+                              ));
+                    } else if (Email != "" && Name != "" && Password != "") {
+                      User? u = await User.checkLogin(Name, Password, Email);
+                      print("GO");
+                      await showDialog(
+                          context: context,
+                          builder: (BuildContext context) => AlertDialog(
+                                title: Text(''),
+                                backgroundColor: Color.fromARGB(255, 0, 0, 0),
+                                content: Text(
+                                  '  สมัครเเล้วเด้อ ',
+                                  style: TextStyle(
+                                      color: Color.fromARGB(255, 255, 255, 255),
+                                      fontSize: 20),
+                                ),
+                                actions: <Widget>[
+                                  TextButton(
+                                      child: Text('Close'),
+                                      style: TextButton.styleFrom(
+                                        primary: Colors.white,
+                                        backgroundColor: Colors.blue,
                                       ),
-                                      actions: <Widget>[
-                                        TextButton(
-                                            child: Text('Close'),
-                                            style: TextButton.styleFrom(
-                                              primary: Colors.white,
-                                              backgroundColor: Colors.blue,
-                                            ),
-                                            onPressed: () {
-                                              Navigator.push(
-                                                  context,
-                                                  MaterialPageRoute(
-                                                      builder: (context) =>
-                                                          Sing_in()));
-                                            }),
-                                      ],
-                                    ));
-                          } else {
-                            print("ว่าง");
-                            await showDialog(
-                                context: context,
-                                builder: (BuildContext context) => AlertDialog(
-                                      title: Text(''),
-                                      backgroundColor: Color.fromARGB(255, 0, 0, 0),
-                                      content: Text(
-                                        '  ERROR ',
-                                        style: TextStyle(
-                                            color: Color.fromARGB(255, 255, 255, 255), fontSize: 20),
+                                      onPressed: () {
+                                        Navigator.push(
+                                            context,
+                                            MaterialPageRoute(
+                                                builder: (context) =>
+                                                    Sing_in()));
+                                      }),
+                                ],
+                              ));
+                    } else {
+                      print("ว่าง");
+                      await showDialog(
+                          context: context,
+                          builder: (BuildContext context) => AlertDialog(
+                                title: Text(''),
+                                backgroundColor: Color.fromARGB(255, 0, 0, 0),
+                                content: Text(
+                                  '  ERROR ',
+                                  style: TextStyle(
+                                      color: Color.fromARGB(255, 255, 255, 255),
+                                      fontSize: 20),
+                                ),
+                                actions: <Widget>[
+                                  TextButton(
+                                      child: Text('Close'),
+                                      style: TextButton.styleFrom(
+                                        primary: Colors.white,
+                                        backgroundColor: Colors.blue,
                                       ),
-                                      actions: <Widget>[
-                                        TextButton(
-                                            child: Text('Close'),
-                                            style: TextButton.styleFrom(
-                                              primary: Colors.white,
-                                              backgroundColor: Colors.blue,
-                                            ),
-                                            onPressed: () {
-                                              Navigator.pop(context);
-                                            }),
-                                      ],
-                                    ));
-                          }
-                  
+                                      onPressed: () {
+                                        Navigator.pop(context);
+                                      }),
+                                ],
+                              ));
+                    }
                   },
-                  
                   child: Text(
-                    
                     "OK",
                     style: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
                   )),
@@ -376,7 +371,6 @@ class _Sing_upState extends State<Sing_up> {
         ),
         children: [
           header(),
-          
           EmailInput(),
           NameInput(),
           passwordInput(),

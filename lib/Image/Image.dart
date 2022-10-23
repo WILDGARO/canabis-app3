@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_application_3/Thenme.dart';
 
 class Image_Home extends StatefulWidget {
   const Image_Home({super.key});
@@ -20,15 +21,13 @@ class _Image_HomeState extends State<Image_Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: backgroundColor,
       body: Column(
-     
         children: [
           SizedBox(
             height: 300,
           ),
           Center(
-            
             child: Image.asset("assets/logo1.png"),
           ),
           SizedBox(
