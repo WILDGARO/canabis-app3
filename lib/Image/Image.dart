@@ -22,15 +22,14 @@ class _Image_HomeState extends State<Image_Home> {
     return Scaffold(
       backgroundColor: Color.fromARGB(255, 73, 211, 84),
       body: Column(
-     
         children: [
           SizedBox(
             height: 300,
           ),
           Center(
-            
-            child: Image.asset("assets/logo1.png"),
+            child: Container(child: Image.asset("assets/logo1.png",scale: 0.7)),
           ),
+          Text("Canabis"),
           SizedBox(
             height: 200,
           ),
