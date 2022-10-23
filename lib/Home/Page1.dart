@@ -114,7 +114,7 @@ class _HomePage1State extends State<HomePage1> {
     var w = MediaQuery.of(context).size.width;
     return Scaffold(
       resizeToAvoidBottomInset: false,
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.green[50],
       body: Container(
         height: h,
         width: w,
