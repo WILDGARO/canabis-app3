@@ -92,12 +92,12 @@ class _Sing_upState extends State<Sing_up> {
               Icons.email,
               color: Colors.white,
             ),
-            enabledBorder: const UnderlineInputBorder(
+            enabledBorder:  UnderlineInputBorder(
               borderSide: BorderSide(
                 color: greyColor,
               ),
             ),
-            focusedBorder: const UnderlineInputBorder(
+            focusedBorder:  UnderlineInputBorder(
               borderSide: BorderSide(color: yellowColor),
             ),
             focusColor: yellowColor,
@@ -131,12 +131,12 @@ class _Sing_upState extends State<Sing_up> {
               Icons.person,
               color: Colors.white,
             ),
-            enabledBorder: const UnderlineInputBorder(
+            enabledBorder:  UnderlineInputBorder(
               borderSide: BorderSide(
                 color: greyColor,
               ),
             ),
-            focusedBorder: const UnderlineInputBorder(
+            focusedBorder:  UnderlineInputBorder(
               borderSide: BorderSide(color: yellowColor),
             ),
             focusColor: yellowColor,
@@ -179,12 +179,12 @@ class _Sing_upState extends State<Sing_up> {
                 color: greyColor,
               ),
             ),
-            enabledBorder: const UnderlineInputBorder(
+            enabledBorder:  UnderlineInputBorder(
               borderSide: BorderSide(
                 color: greyColor,
               ),
             ),
-            focusedBorder: const UnderlineInputBorder(
+            focusedBorder:  UnderlineInputBorder(
               borderSide: BorderSide(color: yellowColor),
             ),
             focusColor: yellowColor,

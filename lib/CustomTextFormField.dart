@@ -31,10 +31,10 @@ class CustomTextFormField extends StatelessWidget {
           icon,
           color: greyColor,
         ),
-        enabledBorder: const UnderlineInputBorder(
+        enabledBorder: UnderlineInputBorder(
           borderSide: BorderSide(color: greyColor),
         ),
-        focusedBorder: const UnderlineInputBorder(
+        focusedBorder: UnderlineInputBorder(
           borderSide: BorderSide(color: yellowColor),
         ),
       ),
