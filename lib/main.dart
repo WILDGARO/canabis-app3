@@ -11,18 +11,14 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: {
-        '/':(context) => const Image_Home(),
-        '//':(context) =>  HomeTest(),
-        
+        '/': (context) => const Image_Home(),
+        '//': (context) => HomeTest(),
       },
-      
     );
   }
 }
-

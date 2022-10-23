@@ -6,9 +6,9 @@ class HomeTest extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: backgroundColor,
-      ),
+      // appBar: AppBar(
+      //   backgroundColor: backgroundColor,
+      // ),
       // drawer: ProBar(user),
       body: HomePage1(),
     );

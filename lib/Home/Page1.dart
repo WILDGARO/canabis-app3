@@ -109,11 +109,12 @@ class _HomePage1State extends State<HomePage1> {
 
   @override
   Widget build(BuildContext context) {
+    double size = MediaQuery.of(context).size.width;
     var h = MediaQuery.of(context).size.height;
     var w = MediaQuery.of(context).size.width;
     return Scaffold(
       resizeToAvoidBottomInset: false,
-      backgroundColor: Colors.green[600],
+      backgroundColor: Colors.white,
       body: Container(
         height: h,
         width: w,
@@ -296,7 +297,10 @@ class _HomePage1State extends State<HomePage1> {
                       padding: const EdgeInsets.all(8.0),
                       child: Container(
                         child: CupertinoContextMenu(
-                          child: Image.asset("assets/logo1.png"),
+                          child: Container(
+                              child: Image.asset(
+                            "assets/logo3.png",
+                          )),
                           actions: <Widget>[
                             CupertinoContextMenuAction(
                               child: const Text('เปิดแกลลอรี่'),
