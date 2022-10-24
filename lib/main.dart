@@ -4,6 +4,8 @@ import 'package:flutter_application_3/Home/Page1.dart';
 
 import 'package:flutter_application_3/Image/Image.dart';
 
+import 'Class/Early_N_Def.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -17,8 +19,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: {
-        '/':(context) => const Image_Home(),
-        '//':(context) =>  HomeTest(),
+        '/':(context) => HomeTest(),
         
       },
       

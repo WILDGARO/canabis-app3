@@ -18,17 +18,20 @@ class _Early_N_DefState extends State<Early_N_Def> {
       
       body: SingleChildScrollView(
         child: Container(
-          
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
-      
-            children: <Widget>[
-              SizedBox(
-                  height: 100,
-                  width: 100,
-                  child: Image.file(
-                    widget.file,
-                  ))
+            children: <Widget>[ 
+                 SizedBox(
+                   child: Image.file(
+                      widget.file,
+                      width: 10,
+                      height: 10,
+                    ),
+                 ),
+                 Container(
+                  child: Text("Hellooooooooooooooooooooooooooooooooo",style: TextStyle(fontSize: 50),),
+                  color: Colors.black,
+                 )
             ],
           ),
         ),

@@ -105,45 +105,45 @@ class _HomePage1State extends State<HomePage1> {
                               child: const Text('เปิดกล้องถ่ายรูป'),
                               onPressed: getImageFromCamera,
                             ),
-                            // CupertinoContextMenuAction(
-                            //   child: const Text('Healthyt_N'),
-                            //   onPressed: () {
-                            //     Navigator.push(context,
-                            //         MaterialPageRoute(builder: (context) {
-                            //       return Healthyt_N(_file!);
-                            //     }));
-                            //   },
-                            // ),
-                            // CupertinoContextMenuAction(
-                            //   child: const Text('Early_N_Def'),
-                            //   onPressed: () {
-                            //     Navigator.push(
-                            //         context,
-                            //         MaterialPageRoute(
-                            //             builder: (context) =>
-                            //                 Healthyt_N(_file!)));
-                            //   },
-                            // ),
-                            // CupertinoContextMenuAction(
-                            //   child: const Text('Prog_N_Def'),
-                            //   onPressed: () {
-                            //     Navigator.push(
-                            //         context,
-                            //         MaterialPageRoute(
-                            //             builder: (context) =>
-                            //                 Late_N_Def(_file!)));
-                            //   },
-                            // ),
-                            // CupertinoContextMenuAction(
-                            //   child: const Text('Late_N_Def'),
-                            //   onPressed: () {
-                            //     Navigator.push(
-                            //         context,
-                            //         MaterialPageRoute(
-                            //             builder: (context) =>
-                            //                 Prog_N_Def(_file!)));
-                            //   },
-                            // ),
+                            CupertinoContextMenuAction(
+                              child: const Text('Healthyt_N'),
+                              onPressed: () {
+                                Navigator.push(context,
+                                    MaterialPageRoute(builder: (context) {
+                                  return Healthyt_N(_file!);
+                                }));
+                              },
+                            ),
+                            CupertinoContextMenuAction(
+                              child: const Text('Early_N_Def'),
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            Healthyt_N(_file!)));
+                              },
+                            ),
+                            CupertinoContextMenuAction(
+                              child: const Text('Prog_N_Def'),
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            Late_N_Def(_file!)));
+                              },
+                            ),
+                            CupertinoContextMenuAction(
+                              child: const Text('Late_N_Def'),
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            Prog_N_Def(_file!)));
+                              },
+                            ),
                           ],
                         ),
                       ),
