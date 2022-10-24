@@ -93,12 +93,20 @@ class _Sing_inState extends State<Sing_in> {
               Icons.person,
               color: Colors.white,
             ),
+<<<<<<< HEAD
             enabledBorder: UnderlineInputBorder(
+=======
+            enabledBorder:  UnderlineInputBorder(
+>>>>>>> 1dae66e9f0ff2744674d04045764afec2a8dd781
               borderSide: BorderSide(
                 color: greyColor,
               ),
             ),
+<<<<<<< HEAD
             focusedBorder: UnderlineInputBorder(
+=======
+            focusedBorder:  UnderlineInputBorder(
+>>>>>>> 1dae66e9f0ff2744674d04045764afec2a8dd781
               borderSide: BorderSide(color: yellowColor),
             ),
             focusColor: yellowColor,
@@ -141,12 +149,20 @@ class _Sing_inState extends State<Sing_in> {
                 color: greyColor,
               ),
             ),
+<<<<<<< HEAD
             enabledBorder: UnderlineInputBorder(
+=======
+            enabledBorder:  UnderlineInputBorder(
+>>>>>>> 1dae66e9f0ff2744674d04045764afec2a8dd781
               borderSide: BorderSide(
                 color: greyColor,
               ),
             ),
+<<<<<<< HEAD
             focusedBorder: UnderlineInputBorder(
+=======
+            focusedBorder:  UnderlineInputBorder(
+>>>>>>> 1dae66e9f0ff2744674d04045764afec2a8dd781
               borderSide: BorderSide(color: yellowColor),
             ),
             focusColor: yellowColor,

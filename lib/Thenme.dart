@@ -7,9 +7,14 @@ Color greyColor = Color(0xFF808d9e);
 Color yellowColor = Color(0xFFE8FB7A);
 Color btnGoogleColor = Color(0xFF262832);
 Color blackColor = Color(0xFF1d1e25);
+<<<<<<< HEAD
 Color secondaryBtnColor = Color(0xFF1b1b1a);
 const Color cafeBrown = Color(0xff632B13);
 // Color Greentext = Color.fromARGB(0, 216, 236, 157);
+=======
+Color otpColor = Color(0xFF1b1b1b);
+Color secondaryBtnColor = Color(0xFF1b1b1a);
+>>>>>>> 1dae66e9f0ff2744674d04045764afec2a8dd781
 
 FontWeight light = FontWeight.w300;
 FontWeight regular = FontWeight.w400;

@@ -32,38 +32,6 @@ class _HomePage1State extends State<HomePage1> {
     'Class 3': 'Class 3',
   };
 
-  // @override
-  // void initState() {
-  //   super.initState();
-  //   loadmodel().then((value) {
-  //     setState(() {});
-  //   });
-  // }
-
-  // detectimage(File l) async {
-  //    var prediction = await Tflite.runModelOnImage(
-  //     path: l.path,
-  //     numResults: 2,
-  //     threshold: 0.6,
-  //     imageMean: 127.5,
-  //     imageStd: 127.5,
-  //    );
-
-  //   setState(() {
-  //     output = prediction;
-  //     label = (output![0]['label']).toString().substring(2);
-  //     fine = gfg[label];
-  //     loading = false;
-  //   });
-  // }
-
-  // loadmodel() async {
-  //   await Tflite.loadModel(
-  //     model: 'assets/model_unquant.tflite/',
-  //     labels: 'assets/labels.txt/',
-  //   );
-  // }
-
   @override
   void dispose() {
     super.dispose();
@@ -91,28 +59,13 @@ class _HomePage1State extends State<HomePage1> {
     return (_file);
   }
 
-  // Future uploadImage() async {
-  //   final uri = Uri.parse("http://192.168.203.189/my_app/ImageAI.php");
-  //   var request = http.MultipartRequest('POST', uri);
-  //   request.fields['Name'] = nameController.text;
-  //   request.fields['Email'] = imageController.text;
-  //   var pic = await http.MultipartFile.fromPath("image", _file!.path);
-  //   request.files.add(pic);
-  //   var response = await request.send();
-  //   if (response.statusCode == 200) {
-  //     print("GG");
-  //     print(_file!);
-  //   } else {
-  //     print("ZZ");
-  //   }
-  // }
-
   @override
   Widget build(BuildContext context) {
     var h = MediaQuery.of(context).size.height;
     var w = MediaQuery.of(context).size.width;
     return Scaffold(
       resizeToAvoidBottomInset: false,
+<<<<<<< HEAD
       backgroundColor: Colors.green[100],
       body: Container(
         height: h,
@@ -358,16 +311,84 @@ class _HomePage1State extends State<HomePage1> {
                               // ),
                             ],
                           ),
+=======
+      backgroundColor: Color.fromARGB(255, 73, 211, 84),
+      body: Container(
+        height: h,
+        width: w,
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: SizedBox(
+                  height: 200,
+                  width: 200,
+                  child: Container(
+                    child: _file == null ? Text('') : Image.file(_file!),
+                  ),
+                ),
+              ),
+              Expanded(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Container(
+                        child: CupertinoContextMenu(
+                          child: Image.asset("assets/logo1.png"),
+                          actions: <Widget>[
+                            CupertinoContextMenuAction(
+                              child: const Text('เปิดแกลลอรี่'),
+                              onPressed: getImageFromGallery,
+                            ),
+                            CupertinoContextMenuAction(
+                              child: const Text('เปิดกล้องถ่ายรูป'),
+                              onPressed: getImageFromCamera,
+                            ),
+                            CupertinoContextMenuAction(
+                              child: const Text('Healthyt_N'),
+                              onPressed: () {
+                                Navigator.push(context,
+                                    MaterialPageRoute(builder: (context) {
+                                  return Healthyt_N(_file!);
+                                }));
+                              },
+                            ),
+                            CupertinoContextMenuAction(
+                              child: const Text('Early_N_Def'),
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            Early_N_Def(_file!)));
+                              },
+                            ),
+                           
+                          ],
+>>>>>>> 1dae66e9f0ff2744674d04045764afec2a8dd781
                         ),
                       ),
                     ],
                   ),
                 ),
+<<<<<<< HEAD
                 Container(
                   child: Text(
                     "กดรูปค้างไว้ จะมีเมนูขึ้นมา",
                     style: TextStyle(color: Colors.white),
                   ),
+=======
+              ),
+              Container(
+                child: Text(
+                  "Press logo to start function.",
+                  style: TextStyle(color: Colors.white),
+>>>>>>> 1dae66e9f0ff2744674d04045764afec2a8dd781
                 ),
               ],
             ),
