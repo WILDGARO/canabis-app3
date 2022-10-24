@@ -8,7 +8,7 @@ Color yellowColor = Color(0xFFE8FB7A);
 Color btnGoogleColor = Color(0xFF262832);
 Color blackColor = Color(0xFF1d1e25);
 Color secondaryBtnColor = Color(0xFF1b1b1a);
-Color greenColor = Color.fromRGBO(216, 236, 157, 255);
+const Color cafeBrown = Color(0xff632B13);
 // Color Greentext = Color.fromARGB(0, 216, 236, 157);
 
 FontWeight light = FontWeight.w300;

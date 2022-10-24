@@ -38,6 +38,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   google_fonts: ^3.0.1
   iconly: ^1.0.1
+  lottie: ^1.4.3
+  smooth_page_indicator: ^1.0.0+2
  
 
 

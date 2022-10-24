@@ -30,7 +30,7 @@ class CustomTextFormField extends StatelessWidget {
           color: greyColor,
         ),
         enabledBorder: UnderlineInputBorder(
-          borderSide: BorderSide(color: greyColor),
+          borderSide: BorderSide(color: cafeBrown),
         ),
         focusedBorder: UnderlineInputBorder(
           borderSide: BorderSide(color: yellowColor),
