@@ -121,29 +121,10 @@ class _HomePage1State extends State<HomePage1> {
                                     context,
                                     MaterialPageRoute(
                                         builder: (context) =>
-                                            Healthyt_N(_file!)));
+                                            Early_N_Def(_file!)));
                               },
                             ),
-                            CupertinoContextMenuAction(
-                              child: const Text('Prog_N_Def'),
-                              onPressed: () {
-                                Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) =>
-                                            Late_N_Def(_file!)));
-                              },
-                            ),
-                            CupertinoContextMenuAction(
-                              child: const Text('Late_N_Def'),
-                              onPressed: () {
-                                Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) =>
-                                            Prog_N_Def(_file!)));
-                              },
-                            ),
+                           
                           ],
                         ),
                       ),

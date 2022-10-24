@@ -14,23 +14,24 @@ class _Early_N_DefState extends State<Early_N_Def> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        backgroundColor: Color.fromARGB(255, 73, 211, 84),
+      ),
       
       body: SingleChildScrollView(
         child: Container(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
-            children: <Widget>[ 
+            children: [ 
                  SizedBox(
                    child: Image.file(
                       widget.file,
-                      width: 10,
-                      height: 10,
+                      width: 500,
+                      height: 500,
                     ),
                  ),
                  Container(
-                  child: Text("Hellooooooooooooooooooooooooooooooooo",style: TextStyle(fontSize: 50),),
-                  color: Colors.black,
+                  child: Text("Hello",style: TextStyle(fontSize: 50,color: Colors.black),),
                  )
             ],
           ),
