@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_3/Thenme.dart';
+import 'package:flutter_application_3/ulity/Thenme.dart';
 import 'package:lottie/lottie.dart';
 
 class IntroPage1 extends StatelessWidget {

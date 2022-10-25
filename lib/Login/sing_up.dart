@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_3/API/Sing_up.dart';
 import 'package:flutter_application_3/Login/sing_in.dart';
-import 'package:flutter_application_3/Thenme.dart';
+import 'package:flutter_application_3/ulity/Thenme.dart';
 
 class Sing_up extends StatefulWidget {
   const Sing_up({super.key});
