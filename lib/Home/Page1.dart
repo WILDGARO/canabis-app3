@@ -2,8 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_3/Class/Early_N_Def.dart';
 import 'package:flutter_application_3/Class/Healthyt_N.dart';
-import 'package:flutter_application_3/Class/Late_N_Def.dart';
-import 'package:flutter_application_3/Class/Prog_N_Def.dart';
 import 'package:flutter_application_3/Home/profile.dart';
 import 'package:flutter_application_3/Improve/Improve1.dart';
 import 'package:flutter_application_3/Thenme.dart';
