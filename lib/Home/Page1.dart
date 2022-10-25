@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_3/data/canabisdata.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 
 // import 'package:flutter_application_3/Class/Healthyt_N.dart';
 // import 'package:flutter_application_3/Class/Late_N_Def.dart';
@@ -11,7 +13,8 @@ import 'package:image_picker/image_picker.dart';
 import 'dart:io';
 
 class HomePage1 extends StatefulWidget {
-  const HomePage1({super.key});
+ const HomePage1({Key? key}) : super(key: key);
+  
 
   @override
   State<HomePage1> createState() => _HomePage1State();
@@ -274,9 +277,11 @@ class _HomePage1State extends State<HomePage1> {
                                 CupertinoContextMenuAction(
                                   child: const Text('ข้อมูลสายพันธุ์กัญชา'),
                                   onPressed: () {
-                                    Navigator.push(context,
-                                        MaterialPageRoute(builder: (context) => const CanData()
-                                    ));
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) =>
+                                                 CanData()));
                                   },
                                 ),
                                 // CupertinoContextMenuAction(
@@ -316,22 +321,6 @@ class _HomePage1State extends State<HomePage1> {
                       ],
                     ),
                   ),
-
-                  Container(
-                    child: Text(
-                      "Press logo to start function.",
-                      style: TextStyle(color: Colors.white),
-                    ),
-                  ),
-                  Container(
-                    child: ButtonBar(
-                      children: <Widget>[
-                        FloatingActionButton(
-                          child: Text('TH/EN'),
-                          onPressed: (){})
-                      ],
-                    ),
-                  )
                 ]),
           ),
         ),
