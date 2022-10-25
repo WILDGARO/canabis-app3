@@ -8,11 +8,10 @@ class IntroPage1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.green[50],
+      backgroundColor: Colors.blue[50],
       body: Center(
         child: Column(
           children: [
-            Container(),
             Container(
               child: Lottie.network(
                   "https://assets1.lottiefiles.com/packages/lf20_hAvF1pS1pb.json"),

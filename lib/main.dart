@@ -19,13 +19,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: {
-<<<<<<< HEAD
         '/': (context) => const MyWidget(),
         '//': (context) => HomeTest(),
-=======
-        '/':(context) => HomeTest(),
-        
->>>>>>> 1dae66e9f0ff2744674d04045764afec2a8dd781
       },
     );
   }

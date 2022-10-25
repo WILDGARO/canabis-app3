@@ -8,13 +8,16 @@ class IntroPage3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.purple[100],
+      backgroundColor: Colors.green[50],
       body: Center(
         child: Container(
-          child: Text(
-            'Nitrogen deficiency detection system in cannabis leaves',
-            style: TextStyle(fontSize: 18),
+          child: Image.asset(
+            "assets/KU_Logo.png",
           ),
+          // Text(
+          //   'Nitrogen deficiency detection system in cannabis leaves',
+          //   style: TextStyle(fontSize: 18),
+          // ),
         ),
       ),
     );

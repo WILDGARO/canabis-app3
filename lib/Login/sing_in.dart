@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_3/API/LoginAPI.dart';
-import 'package:flutter_application_3/Home/HomeTest.dart';
-import 'package:flutter_application_3/Home/Home_page.dart';
-import 'package:flutter_application_3/Home/Page1.dart';
-
 import 'package:flutter_application_3/Login/sing_up.dart';
-import 'package:flutter_application_3/Thenme.dart';
+
+import '../Home/HomeTest.dart';
+import '../Thenme.dart';
 
 class Sing_in extends StatefulWidget {
   const Sing_in({super.key});
@@ -93,20 +91,12 @@ class _Sing_inState extends State<Sing_in> {
               Icons.person,
               color: Colors.white,
             ),
-<<<<<<< HEAD
             enabledBorder: UnderlineInputBorder(
-=======
-            enabledBorder:  UnderlineInputBorder(
->>>>>>> 1dae66e9f0ff2744674d04045764afec2a8dd781
               borderSide: BorderSide(
                 color: greyColor,
               ),
             ),
-<<<<<<< HEAD
             focusedBorder: UnderlineInputBorder(
-=======
-            focusedBorder:  UnderlineInputBorder(
->>>>>>> 1dae66e9f0ff2744674d04045764afec2a8dd781
               borderSide: BorderSide(color: yellowColor),
             ),
             focusColor: yellowColor,
@@ -149,20 +139,12 @@ class _Sing_inState extends State<Sing_in> {
                 color: greyColor,
               ),
             ),
-<<<<<<< HEAD
             enabledBorder: UnderlineInputBorder(
-=======
-            enabledBorder:  UnderlineInputBorder(
->>>>>>> 1dae66e9f0ff2744674d04045764afec2a8dd781
               borderSide: BorderSide(
                 color: greyColor,
               ),
             ),
-<<<<<<< HEAD
             focusedBorder: UnderlineInputBorder(
-=======
-            focusedBorder:  UnderlineInputBorder(
->>>>>>> 1dae66e9f0ff2744674d04045764afec2a8dd781
               borderSide: BorderSide(color: yellowColor),
             ),
             focusColor: yellowColor,
