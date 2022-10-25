@@ -10,6 +10,8 @@ import 'package:image_picker/image_picker.dart';
 
 import 'dart:io';
 
+import '../data/canabisdata.dart';
+
 class HomePage1 extends StatefulWidget {
   const HomePage1({super.key});
 
@@ -254,32 +256,11 @@ class _HomePage1State extends State<HomePage1> {
                           child: Container(
                             margin: EdgeInsets.all(5),
                             width: double.infinity,
-                            child: CupertinoContextMenu(
-                                child: Container(
-                                  child: Image.asset(
-                                    "assets/logo3.png",
-                                  ),
-                                ),
-                                actions: <Widget>[
-                                  CupertinoContextMenuAction(
-                                    trailingIcon: CupertinoIcons.share,
-                                    child: const Text('Gallery'),
-                                    onPressed: getImageFromGallery,
-                                  ),
-                                  CupertinoContextMenuAction(
-                                    child: const Text('เปิดกล้องถ่ายรูป'),
-                                    onPressed: getImageFromCamera,
-                                  ),
-                                  CupertinoContextMenuAction(
-                                    child: const Text('ข้อมูลสายพันธุ์กัญชา'),
-                                    onPressed: () {
-                                      Navigator.push(
-                                          context,
-                                          MaterialPageRoute(
-                                              builder: (context) => CanData()));
-                                    },
-                                  ),
-                                ]),
+                            child: Container(
+                              child: Image.asset(
+                                "assets/logo3.png",
+                              ),
+                            ),
                           ),
                         ),
                         Column(
@@ -299,6 +280,22 @@ class _HomePage1State extends State<HomePage1> {
                             ElevatedButton.icon(
                               onPressed: getImageFromCamera,
                               label: const Text("เปิดกล้อง"),
+                              icon: const Icon(Icons.camera_alt_outlined),
+                              style: ElevatedButton.styleFrom(
+                                  backgroundColor: Colors.pink,
+                                  side: const BorderSide(
+                                      color: Colors.black, width: 2),
+                                  shadowColor: Colors.grey,
+                                  shape: const StadiumBorder()),
+                            ),
+                            ElevatedButton.icon(
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => CanData()));
+                              },
+                              label: const Text("ข้อมูลกัญชา"),
                               icon: const Icon(Icons.camera_alt_outlined),
                               style: ElevatedButton.styleFrom(
                                   backgroundColor: Colors.pink,
