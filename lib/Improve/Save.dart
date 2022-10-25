@@ -41,12 +41,12 @@ class _SaveImageState extends State<SaveImage> {
                   Icons.person,
                   color: Colors.white,
                 ),
-                enabledBorder:  UnderlineInputBorder(
+                enabledBorder: UnderlineInputBorder(
                   borderSide: BorderSide(
                     color: greyColor,
                   ),
                 ),
-                focusedBorder:  UnderlineInputBorder(
+                focusedBorder: UnderlineInputBorder(
                   borderSide: BorderSide(color: yellowColor),
                 ),
                 focusColor: yellowColor,
@@ -71,12 +71,12 @@ class _SaveImageState extends State<SaveImage> {
                   Icons.person,
                   color: Colors.white,
                 ),
-                enabledBorder:  UnderlineInputBorder(
+                enabledBorder: UnderlineInputBorder(
                   borderSide: BorderSide(
                     color: greyColor,
                   ),
                 ),
-                focusedBorder:  UnderlineInputBorder(
+                focusedBorder: UnderlineInputBorder(
                   borderSide: BorderSide(color: yellowColor),
                 ),
                 focusColor: yellowColor,

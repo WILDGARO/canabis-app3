@@ -7,6 +7,7 @@ Color greyColor = Color(0xFF808d9e);
 Color yellowColor = Color(0xFFE8FB7A);
 Color btnGoogleColor = Color(0xFF262832);
 Color blackColor = Color(0xFF1d1e25);
+
 Color otpColor = Color(0xFF1b1b1b);
 Color secondaryBtnColor = Color(0xFF1b1b1a);
 

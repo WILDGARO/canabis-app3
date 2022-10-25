@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_3/Thenme.dart';
 
-
-
 class CustomTextFormField extends StatelessWidget {
   final String hint;
   final IconData icon;

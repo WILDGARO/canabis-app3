@@ -9,18 +9,20 @@ class Custom extends StatelessWidget {
     return SizedBox(
       height: 50,
       width: double.infinity,
-      child: TextButton(onPressed: (){}, style: TextButton.styleFrom(
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(defaulRadius)
+      child: TextButton(
+        onPressed: () {},
+        style: TextButton.styleFrom(
+          shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(defaulRadius)),
         ),
-        
+        child: Text(
+          "OK",
+          style: poppinsTextStyle.copyWith(
+            color: Colors.orange,
+            fontWeight: bold,
+          ),
+        ),
       ),
-      child: Text("OK",style: poppinsTextStyle.copyWith(
-        color: Colors.orange,
-        fontWeight: bold,
-      ),),
-      ),
-      
     );
   }
 }
