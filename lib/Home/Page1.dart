@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 // import 'package:flutter_application_3/Class/Healthyt_N.dart';
 // import 'package:flutter_application_3/Class/Late_N_Def.dart';
@@ -11,6 +12,10 @@ import 'dart:io';
 
 class HomePage1 extends StatefulWidget {
   const HomePage1({super.key});
+  // final List locale = [
+  //   {'name': 'ENGLISH', 'locale': Locale('en', 'US')},
+  //   {'name': 'ภาษาไทย', 'locale': Locale('th', 'TH')},
+  // ];
 
   @override
   State<HomePage1> createState() => _HomePage1State();
@@ -77,7 +82,7 @@ class _HomePage1State extends State<HomePage1> {
           child: Padding(
             padding: const EdgeInsets.all(8.0),
             child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: <Widget>[
                   // TextFormField(
                   //                     style: interTextStyle.copyWith(
@@ -113,8 +118,8 @@ class _HomePage1State extends State<HomePage1> {
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: SizedBox(
-                      height: 200,
-                      width: 200,
+                      height: 50,
+                      width: 100,
                       child: Container(
                         child: _file == null ? Text('') : Image.file(_file!),
                       ),
@@ -247,72 +252,127 @@ class _HomePage1State extends State<HomePage1> {
 
                   Expanded(
                     child: Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
+                      // mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Center(
-                          // padding: const EdgeInsets.all(8.0),
                           child: Container(
-                            margin: EdgeInsets.all(5),
-                            width: double.infinity,
-                            child: CupertinoContextMenu(
-                              child: Container(
-                                child: Image.asset(
-                                  "assets/logo3.png",
-                                ),
-                              ),
-                              actions: <Widget>[
-                                CupertinoContextMenuAction(
-                                  trailingIcon: CupertinoIcons.share,
-                                  child: const Text('Gallery'),
-                                  onPressed: getImageFromGallery,
-                                ),
-                                CupertinoContextMenuAction(
-                                  child: const Text('เปิดกล้องถ่ายรูป'),
-                                  onPressed: getImageFromCamera,
-                                ),
-                                // CupertinoContextMenuAction(
-                                //   child: const Text('Healthyt_N'),
-                                //   onPressed: () {
-                                //     Navigator.push(context,
-                                //         MaterialPageRoute(builder: (context) {
-                                //       return Healthyt_N(_file!);
-                                //     }));
-                                //   },
+                            // width: double.infinity,
+                            child: Column(
+                              children: [
+                                (Image.asset("assets/logo3.png")),
+                                // ElevatedButton(
+                                //   child: Text('นำเข้าจาก Gallery '),
+                                //   onPressed: getImageFromGallery,
+                                //   style: ElevatedButton.styleFrom(
+                                //     primary: Colors.green,
+                                //     onPrimary: Colors.grey,
+                                //     elevation: 0,
+                                //   ),
                                 // ),
-                                // CupertinoContextMenuAction(
-                                //   child: const Text('Early_N_Def'),
-                                //   onPressed: () {
-                                //     Navigator.push(
-                                //         context,
-                                //         MaterialPageRoute(
-                                //             builder: (context) =>
-                                //                 Healthyt_N(_file!)));
-                                //   },
-                                // ),
-                                // CupertinoContextMenuAction(
-                                //   child: const Text('Prog_N_Def'),
-                                //   onPressed: () {
-                                //     Navigator.push(
-                                //         context,
-                                //         MaterialPageRoute(
-                                //             builder: (context) =>
-                                //                 Late_N_Def(_file!)));
-                                //   },
-                                // ),
-                                // CupertinoContextMenuAction(
-                                //   child: const Text('Late_N_Def'),
-                                //   onPressed: () {
-                                //     Navigator.push(
-                                //         context,
-                                //         MaterialPageRoute(
-                                //             builder: (context) =>
-                                //                 Prog_N_Def(_file!)));
-                                //   },
+                                // ElevatedButton(
+                                //   onPressed: getImageFromCamera,
+                                //   child: const Text('เปิดกล้องถ่ายรูป '),
                                 // ),
                               ],
+
+                              // actions: <Widget>[
+                              //   CupertinoContextMenuAction(
+                              //     trailingIcon: CupertinoIcons.share,
+                              //     child: const Text('Gallery'),
+                              //     onPressed: getImageFromGallery,
+                              //   ),
+                              //   CupertinoContextMenuAction(
+                              //     child: const Text('เปิดกล้องถ่ายรูป'),
+                              //     onPressed: getImageFromCamera,
+                              //   ),
+                              //   // CupertinoContextMenuAction(
+                              //   //   child: const Text('Healthyt_N'),
+                              //   //   onPressed: () {
+                              //   //     Navigator.push(context,
+                              //   //         MaterialPageRoute(builder: (context) {
+                              //   //       return Healthyt_N(_file!);
+                              //   //     }));
+                              //   //   },
+                              //   // ),
+                              //   // CupertinoContextMenuAction(
+                              //   //   child: const Text('Early_N_Def'),
+                              //   //   onPressed: () {
+                              //   //     Navigator.push(
+                              //   //         context,
+                              //   //         MaterialPageRoute(
+                              //   //             builder: (context) =>
+                              //   //                 Healthyt_N(_file!)));
+                              //   //   },
+                              //   // ),
+                              //   // CupertinoContextMenuAction(
+                              //   //   child: const Text('Prog_N_Def'),
+                              //   //   onPressed: () {
+                              //   //     Navigator.push(
+                              //   //         context,
+                              //   //         MaterialPageRoute(
+                              //   //             builder: (context) =>
+                              //   //                 Late_N_Def(_file!)));
+                              //   //   },
+                              //   // ),
+                              //   // CupertinoContextMenuAction(
+                              //   //   child: const Text('Late_N_Def'),
+                              //   //   onPressed: () {
+                              //   //     Navigator.push(
+                              //   //         context,
+                              //   //         MaterialPageRoute(
+                              //   //             builder: (context) =>
+                              //   //                 Prog_N_Def(_file!)));
+                              //   //   },
+                              //   // ),
+                              // ],
                             ),
                           ),
                         ),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            ElevatedButton.icon(
+                              onPressed: getImageFromGallery,
+                              label: const Text("นำเข้าจาก Gallery "),
+                              icon: const Icon(Icons.insert_photo_outlined),
+                              style: ElevatedButton.styleFrom(
+                                  backgroundColor: Colors.green,
+                                  side: const BorderSide(
+                                      color: Colors.black, width: 2),
+                                  shadowColor: Colors.grey,
+                                  shape: const StadiumBorder()),
+                            ),
+                            ElevatedButton.icon(
+                              onPressed: getImageFromCamera,
+                              label: const Text("เปิดกล้อง"),
+                              icon: const Icon(Icons.camera_alt_outlined),
+                              style: ElevatedButton.styleFrom(
+                                  backgroundColor: Colors.pink,
+                                  side: const BorderSide(
+                                      color: Colors.black, width: 2),
+                                  shadowColor: Colors.grey,
+                                  shape: const StadiumBorder()),
+                            ),
+                            ElevatedButton.icon(
+                              onPressed: getImageFromCamera,
+                              label: const Text("language"),
+                              icon: const Icon(Icons.language),
+                              style: ElevatedButton.styleFrom(
+                                  backgroundColor: Colors.blue,
+                                  side: const BorderSide(
+                                      color: Colors.black, width: 2),
+                                  shadowColor: Colors.grey,
+                                  shape: const StadiumBorder()),
+                            ),
+                          ],
+                        ),
+                        // GestureDetector(
+                        //   onTap: () {},
+                        //   child: Text(
+                        //     'กดเพื่อเปลี่ยนภาษา',
+                        //     style: TextStyle(color: Colors.black, fontSize: 18),
+                        //   ),
+                        // ),
                       ],
                     ),
                   ),
