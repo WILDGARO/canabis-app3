@@ -2,9 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-// import 'package:flutter_application_3/Class/Healthyt_N.dart';
-// import 'package:flutter_application_3/Class/Late_N_Def.dart';
-// import 'package:flutter_application_3/Class/Prog_N_Def.dart';
+import 'package:flutter_application_3/Class/Healthyt_N.dart';
+import 'package:flutter_application_3/Class/Late_N_Def.dart';
+import 'package:flutter_application_3/Class/Prog_N_Def.dart';
 
 import 'package:image_picker/image_picker.dart';
 
@@ -12,10 +12,6 @@ import 'dart:io';
 
 class HomePage1 extends StatefulWidget {
   const HomePage1({super.key});
-  // final List locale = [
-  //   {'name': 'ENGLISH', 'locale': Locale('en', 'US')},
-  //   {'name': 'ภาษาไทย', 'locale': Locale('th', 'TH')},
-  // ];
 
   @override
   State<HomePage1> createState() => _HomePage1State();
@@ -252,80 +248,38 @@ class _HomePage1State extends State<HomePage1> {
 
                   Expanded(
                     child: Column(
-                      // mainAxisAlignment: MainAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Center(
                           child: Container(
-                            // width: double.infinity,
-                            child: Column(
-                              children: [
-                                (Image.asset("assets/logo3.png")),
-                                // ElevatedButton(
-                                //   child: Text('นำเข้าจาก Gallery '),
-                                //   onPressed: getImageFromGallery,
-                                //   style: ElevatedButton.styleFrom(
-                                //     primary: Colors.green,
-                                //     onPrimary: Colors.grey,
-                                //     elevation: 0,
-                                //   ),
-                                // ),
-                                // ElevatedButton(
-                                //   onPressed: getImageFromCamera,
-                                //   child: const Text('เปิดกล้องถ่ายรูป '),
-                                // ),
-                              ],
-
-                              // actions: <Widget>[
-                              //   CupertinoContextMenuAction(
-                              //     trailingIcon: CupertinoIcons.share,
-                              //     child: const Text('Gallery'),
-                              //     onPressed: getImageFromGallery,
-                              //   ),
-                              //   CupertinoContextMenuAction(
-                              //     child: const Text('เปิดกล้องถ่ายรูป'),
-                              //     onPressed: getImageFromCamera,
-                              //   ),
-                              //   // CupertinoContextMenuAction(
-                              //   //   child: const Text('Healthyt_N'),
-                              //   //   onPressed: () {
-                              //   //     Navigator.push(context,
-                              //   //         MaterialPageRoute(builder: (context) {
-                              //   //       return Healthyt_N(_file!);
-                              //   //     }));
-                              //   //   },
-                              //   // ),
-                              //   // CupertinoContextMenuAction(
-                              //   //   child: const Text('Early_N_Def'),
-                              //   //   onPressed: () {
-                              //   //     Navigator.push(
-                              //   //         context,
-                              //   //         MaterialPageRoute(
-                              //   //             builder: (context) =>
-                              //   //                 Healthyt_N(_file!)));
-                              //   //   },
-                              //   // ),
-                              //   // CupertinoContextMenuAction(
-                              //   //   child: const Text('Prog_N_Def'),
-                              //   //   onPressed: () {
-                              //   //     Navigator.push(
-                              //   //         context,
-                              //   //         MaterialPageRoute(
-                              //   //             builder: (context) =>
-                              //   //                 Late_N_Def(_file!)));
-                              //   //   },
-                              //   // ),
-                              //   // CupertinoContextMenuAction(
-                              //   //   child: const Text('Late_N_Def'),
-                              //   //   onPressed: () {
-                              //   //     Navigator.push(
-                              //   //         context,
-                              //   //         MaterialPageRoute(
-                              //   //             builder: (context) =>
-                              //   //                 Prog_N_Def(_file!)));
-                              //   //   },
-                              //   // ),
-                              // ],
-                            ),
+                            margin: EdgeInsets.all(5),
+                            width: double.infinity,
+                            child: CupertinoContextMenu(
+                                child: Container(
+                                  child: Image.asset(
+                                    "assets/logo3.png",
+                                  ),
+                                ),
+                                actions: <Widget>[
+                                  CupertinoContextMenuAction(
+                                    trailingIcon: CupertinoIcons.share,
+                                    child: const Text('Gallery'),
+                                    onPressed: getImageFromGallery,
+                                  ),
+                                  CupertinoContextMenuAction(
+                                    child: const Text('เปิดกล้องถ่ายรูป'),
+                                    onPressed: getImageFromCamera,
+                                  ),
+                                  CupertinoContextMenuAction(
+                                    child: const Text('ข้อมูลสายพันธุ์กัญชา'),
+                                    onPressed: () {
+                                      Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) => CanData()));
+                                    },
+                                  ),
+                                ]),
                           ),
                         ),
                         Column(
@@ -366,13 +320,6 @@ class _HomePage1State extends State<HomePage1> {
                             ),
                           ],
                         ),
-                        // GestureDetector(
-                        //   onTap: () {},
-                        //   child: Text(
-                        //     'กดเพื่อเปลี่ยนภาษา',
-                        //     style: TextStyle(color: Colors.black, fontSize: 18),
-                        //   ),
-                        // ),
                       ],
                     ),
                   ),
