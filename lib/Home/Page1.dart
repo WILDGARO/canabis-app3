@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_application_3/data/canabisdata.dart';
 
 // import 'package:flutter_application_3/Class/Healthyt_N.dart';
 // import 'package:flutter_application_3/Class/Late_N_Def.dart';
@@ -270,15 +271,14 @@ class _HomePage1State extends State<HomePage1> {
                                   child: const Text('เปิดกล้องถ่ายรูป'),
                                   onPressed: getImageFromCamera,
                                 ),
-                                // CupertinoContextMenuAction(
-                                //   child: const Text('Healthyt_N'),
-                                //   onPressed: () {
-                                //     Navigator.push(context,
-                                //         MaterialPageRoute(builder: (context) {
-                                //       return Healthyt_N(_file!);
-                                //     }));
-                                //   },
-                                // ),
+                                CupertinoContextMenuAction(
+                                  child: const Text('ข้อมูลสายพันธุ์กัญชา'),
+                                  onPressed: () {
+                                    Navigator.push(context,
+                                        MaterialPageRoute(builder: (context) => const CanData()
+                                    ));
+                                  },
+                                ),
                                 // CupertinoContextMenuAction(
                                 //   child: const Text('Early_N_Def'),
                                 //   onPressed: () {
@@ -321,6 +321,15 @@ class _HomePage1State extends State<HomePage1> {
                     child: Text(
                       "Press logo to start function.",
                       style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                  Container(
+                    child: ButtonBar(
+                      children: <Widget>[
+                        FloatingActionButton(
+                          child: Text('TH/EN'),
+                          onPressed: (){})
+                      ],
                     ),
                   )
                 ]),
