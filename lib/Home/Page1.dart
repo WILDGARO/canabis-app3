@@ -337,13 +337,6 @@ class _HomePage1State extends State<HomePage1> {
                         ],
                       ),
                     ),
-
-                    Container(
-                      child: Text(
-                        "Press logo to start function.",
-                        style: TextStyle(color: Colors.white),
-                      ),
-                    )
                   ]),
             ),
           ),
