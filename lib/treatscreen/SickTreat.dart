@@ -24,7 +24,7 @@ class _SickTreat extends State<SickTreat> {
         backgroundColor: Colors.green[100],
         title: Padding(
           padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
-          child: Text('app.BAR').tr(),
+          child: Text('app.SickBar').tr(),
         ),
       ),
       body: EasyLocalization(
@@ -43,7 +43,7 @@ class _SickTreat extends State<SickTreat> {
                       "assets/qwe.jpg",
                       scale: 5.0,
                     ),
-                    Text('app.CANDATA').tr(),
+                    Text('app.SickText').tr(),
                   ],
                 ),
               ),

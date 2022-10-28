@@ -5,6 +5,7 @@ import 'package:flutter_application_3/Home/Page1.dart';
 import 'package:flutter_application_3/Home/intro_screens/start.dart';
 
 import 'package:flutter_application_3/Image/Image.dart';
+import 'package:flutter_application_3/treatscreen/AllTreat.dart';
 
 import 'Class/Early_N_Def.dart';
 
@@ -33,8 +34,8 @@ class MyApp extends StatelessWidget {
       locale: context.locale,
       debugShowCheckedModeBanner: false,
       routes: {
-        '/': (context) => const MyWidget(),
-        '//': (context) => HomeTest(),
+        '/': (context) => const AllTreat(),
+        '//': (context) => AllTreat(),
       },
     );
   }
