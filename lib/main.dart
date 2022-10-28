@@ -34,8 +34,8 @@ class MyApp extends StatelessWidget {
       locale: context.locale,
       debugShowCheckedModeBanner: false,
       routes: {
-        '/': (context) => const AllTreat(),
-        '//': (context) => AllTreat(),
+        '/': (context) => const MyWidget(),
+        '//': (context) => HomeTest(),
       },
     );
   }
